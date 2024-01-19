@@ -1,0 +1,50 @@
+  
+  
+  
+  /*the subnavigation menu*/
+  .subnav{
+  
+  
+    float: center;
+    overflow: hidden;
+  }
+  /*subnav button*/
+  .subnav .subnavbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color:rebeccapurple;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-align: center;
+  }
+  /*add a red back-ground color to the navigation links on hover*/
+  .navbar a:hover, .subnav:hover.subnavbtn{
+    background-color: red;
+  }
+  /*style the subnav contents positioned abolute*/
+  .subnav-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  /*style subnav links*/
+  .subnav-content a {
+    float:left;
+    color:white;
+    text-decoration: none;
+  }
+  /*add a grey background onthe hover*/
+  .subnav-content a:hover{
+    background-color: #eee;
+    color: black;
+  }
+  /*whenyou move the mouse over the subnav container, open the subnav content*/
+  .subnav:hover .subnav-content {
+    display:block;
+  }
